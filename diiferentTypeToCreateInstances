@@ -1,0 +1,55 @@
+//Type1
+//function
+function Student(name,age,marks) {
+  const obj = {};
+  obj.name = name;
+  obj.age = age;
+  obj.marks = marks;
+  return obj;
+}
+
+//Accessing
+Const StudentDetails = createNewPerson('mamatha',24,90);
+StudentDetails.name;
+StudentDetails.age;
+StudentDetails.marks;
+
+//Type2
+//function
+function Student(name,age,marks) {
+  const obj = {};
+  obj.name = name;
+  obj.age = age;
+  obj.marks = marks;
+}
+
+//Accessing
+Const StudentDetails = new Student('mamatha',24,90);
+StudentDetails.name;
+StudentDetails.age;
+StudentDetails.marks;
+
+//Type3
+//function
+function Student(name,age,marks) {
+  this.name = name;
+  this.age = age;
+  this.marks = marks;
+}
+
+////Accessing
+Const StudentDetails = new Student('mamatha',24,90);
+StudentDetails.name;
+StudentDetails['age'];
+StudentDetails.marks;
+
+//initialize values
+const studentDetails = new Object();
+studentDetails.name = "mamatha";
+
+//or
+const studentDetails = new Object({
+'name':'mamatha',
+'age':24,
+'marks':90
+});
